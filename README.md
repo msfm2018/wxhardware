@@ -6,6 +6,11 @@
   <img src="https://github.com/msfm2018/wxhardware/blob/v1/index.png?raw=true">
 </p>
 
+
+<p align="center">
+  <img src="https://github.com/msfm2018/wxhardware/blob/v1/index2.jpg?raw=true">
+</p>
+
 stm32最小系统版 wifi和温湿度模块 服务器用了 erlang 
 
 协议：
