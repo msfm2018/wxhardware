@@ -13529,3 +13529,1273 @@ Callback error in terminate: error:{badmatch,{error,einval}}
     reductions: 35485
   neighbours:
 
+=CRASH REPORT==== 12-Jul-2025::11:41:56.429000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.183.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.181.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.181.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 258
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:41:56.450000 ===
+Ranch listener http, connection process <0.181.0>, stream 1 had its request process <0.183.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.181.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"localhost">>,peer => {{127,0,0,1},63546},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"localhost:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:44:25.495000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.203.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.201.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.201.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 151
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:44:25.496000 ===
+Ranch listener http, connection process <0.201.0>, stream 1 had its request process <0.203.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.201.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63663},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:46:35.450000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.206.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.205.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.205.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 140
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:46:35.454000 ===
+Ranch listener http, connection process <0.205.0>, stream 1 had its request process <0.206.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.205.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63720},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"12">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 12,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:47:23.045000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.208.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.207.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.207.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 140
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:47:23.045000 ===
+Ranch listener http, connection process <0.207.0>, stream 1 had its request process <0.208.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.207.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63731},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"12">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 12,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:48:30.437000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.211.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.210.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.210.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 140
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:48:30.438000 ===
+Ranch listener http, connection process <0.210.0>, stream 1 had its request process <0.211.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.210.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63757},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"60">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 60,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:33.239000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.178.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 351
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:33.267000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.178.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.177.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63896},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"60">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 60,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:43.802000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.180.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:43.803000 ===
+Ranch listener http, connection process <0.179.0>, stream 1 had its request process <0.180.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:45.233000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.182.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:45.234000 ===
+Ranch listener http, connection process <0.179.0>, stream 2 had its request process <0.182.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 2,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:45.872000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.183.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:45.872000 ===
+Ranch listener http, connection process <0.179.0>, stream 3 had its request process <0.183.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 3,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:46.088000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.184.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:46.088000 ===
+Ranch listener http, connection process <0.179.0>, stream 4 had its request process <0.184.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 4,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:46.295000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.185.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:46.296000 ===
+Ranch listener http, connection process <0.179.0>, stream 5 had its request process <0.185.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 5,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:46.513000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.186.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:46.514000 ===
+Ranch listener http, connection process <0.179.0>, stream 6 had its request process <0.186.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 6,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:46.718000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.187.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:46.719000 ===
+Ranch listener http, connection process <0.179.0>, stream 7 had its request process <0.187.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 7,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:47.239000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.188.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:47.240000 ===
+Ranch listener http, connection process <0.179.0>, stream 8 had its request process <0.188.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 8,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:47.470000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.189.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:47.470000 ===
+Ranch listener http, connection process <0.179.0>, stream 9 had its request process <0.189.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 9,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:47.687000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.190.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:47.687000 ===
+Ranch listener http, connection process <0.179.0>, stream 10 had its request process <0.190.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 10,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:47.943000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.191.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:47.944000 ===
+Ranch listener http, connection process <0.179.0>, stream 11 had its request process <0.191.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 11,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:48.394000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.192.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:48.394000 ===
+Ranch listener http, connection process <0.179.0>, stream 12 had its request process <0.192.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 12,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::11:51:48.703000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.193.0>
+    registered_name: []
+    exception error: undefined function sensor_httget_post_handler:init/2
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 154
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::11:51:48.703000 ===
+Ranch listener http, connection process <0.179.0>, stream 13 had its request process <0.193.0> exit with reason {undef,[{sensor_httget_post_handler,init,[#{pid => <0.179.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},63899},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 13,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}},[]],[]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:06:41.879000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.178.0>
+    registered_name: []
+    exception error: undefined function cowboy_req:body/1
+      in function  sensor_httget_post_handler:handle_post/2 (sensor_httget_post_handler.erl:27)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.120.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 386
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:06:41.895000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.178.0> exit with reason {undef,[{cowboy_req,body,[#{pid => <0.177.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},64422},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"60">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 60,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}}],[]},{sensor_httget_post_handler,handle_post,2,[{file,"sensor_httget_post_handler.erl"},{line,27}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:06:54.929000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.181.0>
+    registered_name: []
+    exception error: bad argument
+      in function  iolist_size/1
+         called as iolist_size([71,69,84,32,35831,27714,25509,25910,25104,
+                                21151])
+         *** argument 1: not an iodata term
+      in call from cowboy_req:reply/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_req.erl:853)
+      in call from sensor_httget_post_handler:init/2 (sensor_httget_post_handler.erl:17)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.180.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.120.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.180.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 185
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:06:54.940000 ===
+Ranch listener http, connection process <0.180.0>, stream 1 had its request process <0.181.0> exit with reason {badarg,[{erlang,iolist_size,[[71,69,84,32,35831,27714,25509,25910,25104,21151]],[{error_info,#{module => erl_erts_errors}}]},{cowboy_req,reply,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,113,46,101,114,108]},{line,853}]},{sensor_httget_post_handler,init,2,[{file,"sensor_httget_post_handler.erl"},{line,17}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:09:48.714000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.184.0>
+    registered_name: []
+    exception error: undefined function cowboy_req:body/1
+      in function  sensor_httget_post_handler:handle_post/2 (sensor_httget_post_handler.erl:28)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.183.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.183.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 323
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:09:48.725000 ===
+Ranch listener http, connection process <0.183.0>, stream 1 had its request process <0.184.0> exit with reason {undef,[{cowboy_req,body,[#{pid => <0.183.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},64621},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"60">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 60,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}}],[]},{sensor_httget_post_handler,handle_post,2,[{file,"sensor_httget_post_handler.erl"},{line,28}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:11:29.071000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.178.0>
+    registered_name: []
+    exception error: undefined function cowboy_req:body/1
+      in function  sensor_httget_post_handler:handle_post/2 (sensor_httget_post_handler.erl:28)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 410
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:11:29.089000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.178.0> exit with reason {undef,[{cowboy_req,body,[#{pid => <0.177.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},64706},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"60">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 60,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}}],[]},{sensor_httget_post_handler,handle_post,2,[{file,"sensor_httget_post_handler.erl"},{line,28}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:13:10.293000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.178.0>
+    registered_name: []
+    exception error: undefined function cowboy_req:body/1
+      in function  sensor_httget_post_handler:handle_post/2 (sensor_httget_post_handler.erl:29)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 410
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:13:10.309000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.178.0> exit with reason {undef,[{cowboy_req,body,[#{pid => <0.177.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},64795},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"POST">>,headers => #{<<"accept">> => <<"*/*">>,<<"content-length">> => <<"60">>,<<"content-type">> => <<"application/json">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 60,has_body => true,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}}],[]},{sensor_httget_post_handler,handle_post,2,[{file,"sensor_httget_post_handler.erl"},{line,29}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:16:10.319000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.178.0>
+    registered_name: []
+    exception error: bad argument
+      in function  iolist_size/1
+         called as iolist_size([28201,28287,24230,25968,25454,25509,25910,
+                                25104,21151])
+         *** argument 1: not an iodata term
+      in call from cowboy_req:reply/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_req.erl:853)
+      in call from sensor_httget_post_handler:handle_post/2 (sensor_httget_post_handler.erl:45)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 778
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:16:10.347000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.178.0> exit with reason {badarg,[{erlang,iolist_size,[[28201,28287,24230,25968,25454,25509,25910,25104,21151]],[{error_info,#{module => erl_erts_errors}}]},{cowboy_req,reply,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,113,46,101,114,108]},{line,853}]},{sensor_httget_post_handler,handle_post,2,[{file,"sensor_httget_post_handler.erl"},{line,45}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:16:35.428000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.180.0>
+    registered_name: []
+    exception error: bad argument
+      in function  iolist_size/1
+         called as iolist_size([71,69,84,32,35831,27714,25509,25910,25104,
+                                21151])
+         *** argument 1: not an iodata term
+      in call from cowboy_req:reply/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_req.erl:853)
+      in call from sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:18)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 207
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:16:35.430000 ===
+Ranch listener http, connection process <0.179.0>, stream 1 had its request process <0.180.0> exit with reason {badarg,[{erlang,iolist_size,[[71,69,84,32,35831,27714,25509,25910,25104,21151]],[{error_info,#{module => erl_erts_errors}}]},{cowboy_req,reply,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,113,46,101,114,108]},{line,853}]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,18}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:17:18.194000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.183.0>
+    registered_name: []
+    exception error: bad argument
+      in function  iolist_size/1
+         called as iolist_size([71,69,84,32,35831,27714,25509,25910,25104,
+                                21151])
+         *** argument 1: not an iodata term
+      in call from cowboy_req:reply/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_req.erl:853)
+      in call from sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:18)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.182.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.182.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 207
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:17:18.195000 ===
+Ranch listener http, connection process <0.182.0>, stream 1 had its request process <0.183.0> exit with reason {badarg,[{erlang,iolist_size,[[71,69,84,32,35831,27714,25509,25910,25104,21151]],[{error_info,#{module => erl_erts_errors}}]},{cowboy_req,reply,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,113,46,101,114,108]},{line,853}]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,18}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:20:28.282000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.179.0>
+    registered_name: []
+    exception error: bad argument
+      in function  iolist_size/1
+         called as iolist_size([71,69,84,32,35831,27714,25509,25910,25104,
+                                21151])
+         *** argument 1: not an iodata term
+      in call from cowboy_req:reply/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_req.erl:853)
+      in call from sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:18)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.120.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 447
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:20:28.307000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.179.0> exit with reason {badarg,[{erlang,iolist_size,[[71,69,84,32,35831,27714,25509,25910,25104,21151]],[{error_info,#{module => erl_erts_errors}}]},{cowboy_req,reply,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,113,46,101,114,108]},{line,853}]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,18}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:23:08.041000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.179.0>
+    registered_name: []
+    exception error: undefined function cowboy_req:set_resp_header/4
+      in function  sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:18)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 457
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:23:08.058000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.179.0> exit with reason {undef,[{cowboy_req,set_resp_header,[200,#{<<"access-control-allow-headers">> => <<"content-type">>,<<"access-control-allow-methods">> => <<"GET, POST, OPTIONS">>,<<"access-control-allow-origin">> => <<"*">>,<<"content-type">> => <<"text/plain">>},[71,69,84,32,35831,27714,25509,25910,25104,21151],#{pid => <0.177.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},65401},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999}}],[]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,18}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:47:35.256000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {error,
+                         {missing_callback,
+                             {sensor_httget_post_handler,to_html,2}},
+                         'A callback specified in content_types_provided/2 is not exported.'}
+      in function  cowboy_rest:set_resp_body/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_rest.erl:1455)
+      in call from cowboy_rest:upgrade/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_rest.erl:281)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.120.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 957
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:47:35.286000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.179.0> exit with reason {{error,{missing_callback,{sensor_httget_post_handler,to_html,2}},'A callback specified in content_types_provided/2 is not exported.'},[{cowboy_rest,set_resp_body,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,115,116,46,101,114,108]},{line,1455}]},{cowboy_rest,upgrade,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,115,116,46,101,114,108]},{line,281}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:58:22.649000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.178.0>
+    registered_name: []
+    exception error: bad argument
+      in function  iolist_size/1
+         called as iolist_size([28201,28287,24230,25968,25454,25509,25910,
+                                25104,21151])
+         *** argument 1: not an iodata term
+      in call from cowboy_req:reply/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_req.erl:853)
+      in call from sensor_httget_post_handler:handle_post/2 (sensor_httget_post_handler.erl:56)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 778
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:58:22.673000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.178.0> exit with reason {badarg,[{erlang,iolist_size,[[28201,28287,24230,25968,25454,25509,25910,25104,21151]],[{error_info,#{module => erl_erts_errors}}]},{cowboy_req,reply,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,113,46,101,114,108]},{line,853}]},{sensor_httget_post_handler,handle_post,2,[{file,"sensor_httget_post_handler.erl"},{line,56}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::12:59:03.092000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.178.0>
+    registered_name: []
+    exception error: bad argument
+      in function  iolist_size/1
+         called as iolist_size([28201,28287,24230,25968,25454,25509,25910,
+                                25104,21151])
+         *** argument 1: not an iodata term
+      in call from cowboy_req:reply/4 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_req.erl:853)
+      in call from sensor_httget_post_handler:handle_post/2 (sensor_httget_post_handler.erl:55)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 778
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::12:59:03.100000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.178.0> exit with reason {badarg,[{erlang,iolist_size,[[28201,28287,24230,25968,25454,25509,25910,25104,21151]],[{error_info,#{module => erl_erts_errors}}]},{cowboy_req,reply,4,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,114,101,113,46,101,114,108]},{line,853}]},{sensor_httget_post_handler,handle_post,2,[{file,"sensor_httget_post_handler.erl"},{line,55}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:40:30.852000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.180.0>
+    registered_name: []
+    exception error: undefined function jiffy:encode/1
+      in function  sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:23)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.120.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 160
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:40:30.870000 ===
+Ranch listener http, connection process <0.179.0>, stream 1 had its request process <0.180.0> exit with reason {undef,[{jiffy,encode,[[{123,#{<<"humidity">> => 60,<<"id">> => 123,<<"temperature">> => 25.3,<<"type">> => <<"0x01">>}}]],[]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,23}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:42:20.182000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.180.0>
+    registered_name: []
+    exception error: {unsupported_type,
+                         {123,
+                          #{<<"humidity">> => 60,<<"id">> => 123,
+                            <<"temperature">> => 25.3,
+                            <<"type">> => <<"0x01">>}}}
+      in function  json:do_encode/2 (json.erl:203)
+      in call from json:do_encode_list/2 (json.erl:245)
+      in call from sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:23)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 141
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:42:20.198000 ===
+Ranch listener http, connection process <0.179.0>, stream 1 had its request process <0.180.0> exit with reason {{unsupported_type,{123,#{<<"humidity">> => 60,<<"id">> => 123,<<"temperature">> => 25.3,<<"type">> => <<"0x01">>}}},[{json,do_encode,2,[{file,"json.erl"},{line,203}]},{json,do_encode_list,2,[{file,"json.erl"},{line,245}]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,23}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=ERROR REPORT==== 12-Jul-2025::13:44:34.898000 ===
+Failed to start Ranch listener http in ranch_tcp:listen([{cacerts,'...'},{key,'...'},{cert,'...'},{buffer,1024},{port,8999}]) for reason eaddrinuse (address already in use)
+
+=CRASH REPORT==== 12-Jul-2025::13:44:34.901000 ===
+  crasher:
+    initial call: supervisor:ranch_acceptors_sup/1
+    pid: <0.131.0>
+    registered_name: []
+    exception exit: {listen_error,http,eaddrinuse}
+      in function  ranch_acceptors_sup:listen_error/5 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/ranch/src/ranch_acceptors_sup.erl:66)
+      in call from supervisor:init/1 (supervisor.erl:912)
+      in call from gen_server:init_it/2 (gen_server.erl:2276)
+      in call from gen_server:init_it/6 (gen_server.erl:2236)
+    ancestors: [<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.129.0>]
+    dictionary: [{logger,error_logger}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 4999
+  neighbours:
+
+=SUPERVISOR REPORT==== 12-Jul-2025::13:44:34.904000 ===
+    supervisor: {<0.129.0>,ranch_listener_sup}
+    errorContext: start_error
+    reason: {listen_error,http,eaddrinuse}
+    offender: [{pid,undefined},
+               {id,ranch_acceptors_sup},
+               {mfargs,{ranch_acceptors_sup,start_link,[http,ranch_tcp]}},
+               {restart_type,permanent},
+               {significant,false},
+               {shutdown,infinity},
+               {child_type,supervisor}]
+
+=INFO REPORT==== 12-Jul-2025::13:44:34.905000 ===
+    application: gc_gateway_app
+    exited: {bad_return,
+                {{gc_gateway_app,start,[normal,[]]},
+                 {'EXIT',
+                     {{badmatch,{error,eaddrinuse}},
+                      [{gc_gateway_app,start,2,
+                           [{file,"gc_gateway_app.erl"},{line,31}]},
+                       {application_master,start_it_old,4,
+                           [{file,"application_master.erl"},{line,299}]}]}}}}
+    type: temporary
+
+=CRASH REPORT==== 12-Jul-2025::13:44:34.905000 ===
+  crasher:
+    initial call: application_master:init/3
+    pid: <0.93.0>
+    registered_name: []
+    exception exit: {bad_return,
+                        {{gc_gateway_app,start,[normal,[]]},
+                         {'EXIT',
+                             {{badmatch,{error,eaddrinuse}},
+                              [{gc_gateway_app,start,2,
+                                   [{file,"gc_gateway_app.erl"},{line,31}]},
+                               {application_master,start_it_old,4,
+                                   [{file,"application_master.erl"},
+                                    {line,299}]}]}}}}
+      in function  application_master:init/3 (application_master.erl:147)
+    ancestors: [application_controller,<0.10.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.94.0>,normal}]
+    links: [<0.45.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 74
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:44:34.905000 ===
+Error in process <0.92.0> with exit value:
+{{nocatch,
+     {gc_gateway_app,
+         {bad_return,
+             {{gc_gateway_app,start,[normal,[]]},
+              {'EXIT',
+                  {{badmatch,{error,eaddrinuse}},
+                   [{gc_gateway_app,start,2,
+                        [{file,"gc_gateway_app.erl"},{line,31}]},
+                    {application_master,start_it_old,4,
+                        [{file,"application_master.erl"},{line,299}]}]}}}},
+         application_start_error}},
+ [{entry,start_app,1,[{file,"core/entry.erl"},{line,21}]},
+  {lists,foreach_1,2,[{file,"lists.erl"},{line,2641}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:45:09.316000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.180.0>
+    registered_name: []
+    exception error: {unsupported_type,
+                         {123,
+                          #{<<"humidity">> => 60,<<"id">> => 123,
+                            <<"temperature">> => 25.3,
+                            <<"type">> => <<"0x01">>}}}
+      in function  json:do_encode/2 (json.erl:203)
+      in call from json:do_encode_list/2 (json.erl:245)
+      in call from sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:22)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.179.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 141
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:45:09.324000 ===
+Ranch listener http, connection process <0.179.0>, stream 1 had its request process <0.180.0> exit with reason {{unsupported_type,{123,#{<<"humidity">> => 60,<<"id">> => 123,<<"temperature">> => 25.3,<<"type">> => <<"0x01">>}}},[{json,do_encode,2,[{file,"json.erl"},{line,203}]},{json,do_encode_list,2,[{file,"json.erl"},{line,245}]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,22}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:50:39.539000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.179.0>
+    registered_name: []
+    exception error: no try clause matching 
+                     #{pid => <0.177.0>,port => 8999,scheme => <<"http">>,
+                       version => 'HTTP/1.1',path => <<"/gp">>,
+                       host => <<"127.0.0.1">>,
+                       peer => {{127,0,0,1},55186},
+                       bindings => #{},cert => undefined,
+                       host_info => undefined,path_info => undefined,
+                       streamid => 1,method => <<"GET">>,
+                       headers =>
+                           #{<<"accept">> =>
+                                 <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,
+                             <<"accept-encoding">> =>
+                                 <<"gzip, deflate, br, zstd">>,
+                             <<"accept-language">> => <<"zh-CN,zh;q=0.9">>,
+                             <<"connection">> => <<"keep-alive">>,
+                             <<"host">> => <<"127.0.0.1:8999">>,
+                             <<"sec-ch-ua">> =>
+                                 <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,
+                             <<"sec-ch-ua-mobile">> => <<"?0">>,
+                             <<"sec-ch-ua-platform">> => <<"\"Windows\"">>,
+                             <<"sec-fetch-dest">> => <<"document">>,
+                             <<"sec-fetch-mode">> => <<"navigate">>,
+                             <<"sec-fetch-site">> => <<"none">>,
+                             <<"sec-fetch-user">> => <<"?1">>,
+                             <<"upgrade-insecure-requests">> => <<"1">>,
+                             <<"user-agent">> =>
+                                 <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},
+                       body_length => 0,has_body => false,qs => <<>>,
+                       ref => http,
+                       sock => {{127,0,0,1},8999},
+                       has_sent_resp => true}
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 414
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:50:39.565000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.179.0> exit with reason {{try_clause,#{pid => <0.177.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},55186},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999},has_sent_resp => true}},[{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:50:50.324000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.182.0>
+    registered_name: []
+    exception error: no try clause matching 
+                     #{pid => <0.181.0>,port => 8999,scheme => <<"http">>,
+                       version => 'HTTP/1.1',path => <<"/gp">>,
+                       host => <<"127.0.0.1">>,
+                       peer => {{127,0,0,1},55195},
+                       bindings => #{},cert => undefined,
+                       host_info => undefined,path_info => undefined,
+                       streamid => 1,method => <<"GET">>,
+                       headers =>
+                           #{<<"accept">> => <<"*/*">>,
+                             <<"host">> => <<"127.0.0.1:8999">>,
+                             <<"user-agent">> => <<"curl/8.12.1">>},
+                       body_length => 0,has_body => false,qs => <<>>,
+                       ref => http,
+                       sock => {{127,0,0,1},8999},
+                       has_sent_resp => true}
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.181.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.181.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 142
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:50:50.325000 ===
+Ranch listener http, connection process <0.181.0>, stream 1 had its request process <0.182.0> exit with reason {{try_clause,#{pid => <0.181.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},55195},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"*/*">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999},has_sent_resp => true}},[{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:52:42.309000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.179.0>
+    registered_name: []
+    exception error: no try clause matching 
+                     #{pid => <0.177.0>,port => 8999,scheme => <<"http">>,
+                       version => 'HTTP/1.1',path => <<"/gp">>,
+                       host => <<"127.0.0.1">>,
+                       peer => {{127,0,0,1},55322},
+                       bindings => #{},cert => undefined,
+                       host_info => undefined,path_info => undefined,
+                       streamid => 1,method => <<"GET">>,
+                       headers =>
+                           #{<<"accept">> =>
+                                 <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,
+                             <<"accept-encoding">> =>
+                                 <<"gzip, deflate, br, zstd">>,
+                             <<"accept-language">> => <<"zh-CN,zh;q=0.9">>,
+                             <<"cache-control">> => <<"max-age=0">>,
+                             <<"connection">> => <<"keep-alive">>,
+                             <<"host">> => <<"127.0.0.1:8999">>,
+                             <<"sec-ch-ua">> =>
+                                 <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,
+                             <<"sec-ch-ua-mobile">> => <<"?0">>,
+                             <<"sec-ch-ua-platform">> => <<"\"Windows\"">>,
+                             <<"sec-fetch-dest">> => <<"document">>,
+                             <<"sec-fetch-mode">> => <<"navigate">>,
+                             <<"sec-fetch-site">> => <<"none">>,
+                             <<"sec-fetch-user">> => <<"?1">>,
+                             <<"upgrade-insecure-requests">> => <<"1">>,
+                             <<"user-agent">> =>
+                                 <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},
+                       body_length => 0,has_body => false,qs => <<>>,
+                       ref => http,
+                       sock => {{127,0,0,1},8999},
+                       has_sent_resp => true}
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.177.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 602
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:52:42.319000 ===
+Ranch listener http, connection process <0.177.0>, stream 1 had its request process <0.179.0> exit with reason {{try_clause,#{pid => <0.177.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},55322},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"cache-control">> => <<"max-age=0">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999},has_sent_resp => true}},[{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:52:54.417000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.185.0>
+    registered_name: []
+    exception error: {unsupported_type,
+                         {123,
+                          #{<<"humidity">> => 60,<<"id">> => 123,
+                            <<"temperature">> => 25.3,
+                            <<"type">> => <<"0x01">>}}}
+      in function  json:do_encode/2 (json.erl:203)
+      in call from json:do_encode_list/2 (json.erl:245)
+      in call from sensor_httget_post_handler:handle_get/2 (sensor_httget_post_handler.erl:22)
+      in call from cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.183.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.183.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 29
+    reductions: 172
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:52:54.418000 ===
+Ranch listener http, connection process <0.183.0>, stream 1 had its request process <0.185.0> exit with reason {{unsupported_type,{123,#{<<"humidity">> => 60,<<"id">> => 123,<<"temperature">> => 25.3,<<"type">> => <<"0x01">>}}},[{json,do_encode,2,[{file,"json.erl"},{line,203}]},{json,do_encode_list,2,[{file,"json.erl"},{line,245}]},{sensor_httget_post_handler,handle_get,2,[{file,"sensor_httget_post_handler.erl"},{line,22}]},{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:58:36.205000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.182.0>
+    registered_name: []
+    exception error: no try clause matching 
+                     #{pid => <0.181.0>,port => 8999,scheme => <<"http">>,
+                       version => 'HTTP/1.1',path => <<"/gp">>,
+                       host => <<"127.0.0.1">>,
+                       peer => {{127,0,0,1},55652},
+                       bindings => #{},cert => undefined,
+                       host_info => undefined,path_info => undefined,
+                       streamid => 1,method => <<"GET">>,
+                       headers =>
+                           #{<<"accept">> => <<"*/*">>,
+                             <<"host">> => <<"127.0.0.1:8999">>,
+                             <<"user-agent">> => <<"curl/8.12.1">>},
+                       body_length => 0,has_body => false,qs => <<>>,
+                       ref => http,
+                       sock => {{127,0,0,1},8999},
+                       has_sent_resp => true}
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.181.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.181.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 261
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:58:36.211000 ===
+Ranch listener http, connection process <0.181.0>, stream 1 had its request process <0.182.0> exit with reason {{try_clause,#{pid => <0.181.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},55652},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"*/*">>,<<"host">> => <<"127.0.0.1:8999">>,<<"user-agent">> => <<"curl/8.12.1">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999},has_sent_resp => true}},[{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+
+=CRASH REPORT==== 12-Jul-2025::13:59:01.324000 ===
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.184.0>
+    registered_name: []
+    exception error: no try clause matching 
+                     #{pid => <0.183.0>,port => 8999,scheme => <<"http">>,
+                       version => 'HTTP/1.1',path => <<"/gp">>,
+                       host => <<"127.0.0.1">>,
+                       peer => {{127,0,0,1},55671},
+                       bindings => #{},cert => undefined,
+                       host_info => undefined,path_info => undefined,
+                       streamid => 1,method => <<"GET">>,
+                       headers =>
+                           #{<<"accept">> =>
+                                 <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,
+                             <<"accept-encoding">> =>
+                                 <<"gzip, deflate, br, zstd">>,
+                             <<"accept-language">> => <<"zh-CN,zh;q=0.9">>,
+                             <<"connection">> => <<"keep-alive">>,
+                             <<"host">> => <<"127.0.0.1:8999">>,
+                             <<"sec-ch-ua">> =>
+                                 <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,
+                             <<"sec-ch-ua-mobile">> => <<"?0">>,
+                             <<"sec-ch-ua-platform">> => <<"\"Windows\"">>,
+                             <<"sec-fetch-dest">> => <<"document">>,
+                             <<"sec-fetch-mode">> => <<"navigate">>,
+                             <<"sec-fetch-site">> => <<"none">>,
+                             <<"sec-fetch-user">> => <<"?1">>,
+                             <<"upgrade-insecure-requests">> => <<"1">>,
+                             <<"user-agent">> =>
+                                 <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},
+                       body_length => 0,has_body => false,qs => <<>>,
+                       ref => http,
+                       sock => {{127,0,0,1},8999},
+                       has_sent_resp => true}
+      in function  cowboy_handler:execute/2 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_handler.erl:37)
+      in call from cowboy_stream_h:execute/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:310)
+      in call from cowboy_stream_h:request_process/3 (c:/Users/Administrator/Downloads/pzApp-3.1 (1)/pzApp-3.1/服务端文件/my_pz_server/_build/default/lib/cowboy/src/cowboy_stream_h.erl:299)
+    ancestors: [<0.183.0>,<0.130.0>,<0.129.0>,ranch_sup,<0.122.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.183.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 272
+  neighbours:
+
+=ERROR REPORT==== 12-Jul-2025::13:59:01.325000 ===
+Ranch listener http, connection process <0.183.0>, stream 1 had its request process <0.184.0> exit with reason {{try_clause,#{pid => <0.183.0>,port => 8999,scheme => <<"http">>,version => 'HTTP/1.1',path => <<"/gp">>,host => <<"127.0.0.1">>,peer => {{127,0,0,1},55671},bindings => #{},cert => undefined,host_info => undefined,path_info => undefined,streamid => 1,method => <<"GET">>,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7">>,<<"accept-encoding">> => <<"gzip, deflate, br, zstd">>,<<"accept-language">> => <<"zh-CN,zh;q=0.9">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"127.0.0.1:8999">>,<<"sec-ch-ua">> => <<"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"">>,<<"sec-ch-ua-mobile">> => <<"?0">>,<<"sec-ch-ua-platform">> => <<"\"Windows\"">>,<<"sec-fetch-dest">> => <<"document">>,<<"sec-fetch-mode">> => <<"navigate">>,<<"sec-fetch-site">> => <<"none">>,<<"sec-fetch-user">> => <<"?1">>,<<"upgrade-insecure-requests">> => <<"1">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36">>},body_length => 0,has_body => false,qs => <<>>,ref => http,sock => {{127,0,0,1},8999},has_sent_resp => true}},[{cowboy_handler,execute,2,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,104,97,110,100,108,101,114,46,101,114,108]},{line,37}]},{cowboy_stream_h,execute,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,310}]},{cowboy_stream_h,request_process,3,[{file,[99,58,47,85,115,101,114,115,47,65,100,109,105,110,105,115,116,114,97,116,111,114,47,68,111,119,110,108,111,97,100,115,47,112,122,65,112,112,45,51,46,49,32,40,49,41,47,112,122,65,112,112,45,51,46,49,47,26381,21153,31471,25991,20214,47,109,121,95,112,122,95,115,101,114,118,101,114,47,95,98,117,105,108,100,47,100,101,102,97,117,108,116,47,108,105,98,47,99,111,119,98,111,121,47,115,114,99,47,99,111,119,98,111,121,95,115,116,114,101,97,109,95,104,46,101,114,108]},{line,299}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,333}]}]}
+

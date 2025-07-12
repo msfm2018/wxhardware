@@ -1,4 +1,4 @@
--module(gc_gateway_app).
+-module(gc_gateway_app).  %cowboy 2.13
 
 -behaviour(application).
 -include("common.hrl").
@@ -23,7 +23,12 @@ ets:new(sensor_latest, [named_table, public, set,
   Dispatch = cowboy_router:compile([
   {'_', [
       {"/s", sensor_ws_handler, []} , %% 留着也行
-      {"/latest", sensor_http_handler, []}   %% 新加的 HTTP 接口
+
+      %% get post 接口 curl -X POST http://127.0.0.1:8999/gp -d "{\"type\":\"0x01\", \"id\":123, \"temperature\":25.3, \"humidity\":60}" -H "Content-Type: application/json"
+      % curl -v http://127.0.0.1:8999/gp  
+      {"/gp", sensor_httget_post_handler, []} , 
+
+      {"/latest", sensor_http_handler, []}   %% tcp接口使用
   ]}
   ]),
   % %% 启动Cowboy HTTP服务器
