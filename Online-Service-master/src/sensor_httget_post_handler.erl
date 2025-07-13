@@ -1,15 +1,30 @@
 -module(sensor_httget_post_handler).
 -export([init/2]).
 
-init(Req, State) ->
-    Method = cowboy_req:method(Req),
-    case Method of
-        <<"GET">> -> handle_get(Req, State);
-        <<"POST">> -> handle_post(Req, State);
-        _ -> {ok, cowboy_req:reply(405, #{<<"content-type">> => <<"text/plain">>}, <<"Method Not Allowed">>, Req), State}
-    end.
+% init(Req, State) ->
+%     Method = cowboy_req:method(Req),
+%     case Method of
+%         <<"GET">> -> handle_get(Req, State);
+%         <<"POST">> -> handle_post(Req, State);
+%         _ -> {ok, cowboy_req:reply(405, #{<<"content-type">> => <<"text/plain">>}, <<"Method Not Allowed">>, Req), State}
+%     end.
 
+    init(Req0=#{method := <<"GET">>}, State) ->
+        % Req = cowboy_req:reply(200, #{
+        %     <<"content-type">> => <<"text/plain">>
+        % }, <<"Hello world!">>, Req0),
+        handle_get(Req0, State),
+        {ok, Req0, State};
 
+        init(Req0=#{method := <<"POST">>}, State) ->
+        % Req = cowboy_req:reply(200, #{
+        %     <<"content-type">> => <<"text/plain">>
+        % }, <<"Hello world!">>, Req0),
+        handle_post(Req0, State),
+        {ok, Req0, State};
+
+    init(Req0, State) ->
+        {ok, cowboy_req:reply(405, #{<<"content-type">> => <<"text/plain">>}, <<"Method Not Allowed">>, Req0), State}.
 
 
     handle_get(Req, _State) ->
