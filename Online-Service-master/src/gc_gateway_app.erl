@@ -23,7 +23,8 @@ ets:new(sensor_latest, [named_table, public, set,
   Dispatch = cowboy_router:compile([
   {'_', [
       {"/s", sensor_ws_handler, []} , %% 留着也行
-
+      {"/test", toppage_h, []} , %% 测试 stm32 http get数据
+      
       %% get post 接口 curl -X POST http://127.0.0.1:8999/gp -d "{\"type\":\"0x01\", \"id\":123, \"temperature\":25.3, \"humidity\":60}" -H "Content-Type: application/json"
       % curl -v http://127.0.0.1:8999/gp  
       {"/gp", sensor_httget_post_handler, []} , 
